@@ -45,9 +45,6 @@ Responsive Design : Mobile-friendly interface for use across devices
 ## 👥 Team Members
 
 ```
- 
-```
-```
 Student Name Student ID Contact
 Emanuel Singh 104515032 104515032@student.swin.edu.au/singhamol607@gmail.com
 Sahil Amin 104501837 104501837@student.swin.edu.au
