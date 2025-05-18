@@ -1,7 +1,7 @@
 # ElderSafe Connect
 
 ```
-Show Image
+![Dashboard of ElderSafe Connect](images/dashboard.png)
 ```
 ## 🔒 Identity and Access Management System for Aged Care
 
@@ -14,10 +14,10 @@ caregivers.
 
 ```
 University : Swinburne University of Technology
-Unit Code : ICT
+Unit Code : ICT30017
 Unit Name : ICT Project A
 Submission Date : May 18, 2025
-Instructor : [Instructor Name]
+Instructor : Dr Kaberi Naznin
 ```
 ## 📋 Project Overview
 
@@ -49,13 +49,13 @@ Responsive Design : Mobile-friendly interface for use across devices
  
 ```
 ```
-Student Name Student ID
-Emanuel Singh 104515032
-Sahil Amin 104501837
-Aryan Singla 104329631
-Yehan Sooriarachchi 103449800
-Chayan Kapoor 104202680
-Kajal Dhanjal 104224600
+Student Name Student ID Contact
+Emanuel Singh 104515032 104515032@student.swin.edu.au/singhamol607@gmail.com
+Sahil Amin 104501837 104501837@student.swin.edu.au
+Aryan Singla 104329631 104329631@student.swin.edu.au
+Yehan Sooriarachchi 103449800 103449800@student.swin.edu.au
+Chayan Kapoor 104202680 104202680@student.swin.edu.au
+Kajal Dhanjal 104224600 104224600@student.swin.edu.au
 ```
 ## 🔧 Technology Stack
 
@@ -72,7 +72,7 @@ Email : SMTP integration for notifications and password resets
 ### Prerequisites
 
 ```
-Python 3.8 or higher
+Python 3.13.3 or higher
 Supabase account
 SMTP-enabled email account for system notifications
 ```
@@ -83,13 +83,12 @@ SMTP-enabled email account for system notifications
 
 ```
 bash
-gitgit clone https://github.com/your-username/eldersafe-connect.git clone https://github.com/your-username/eldersafe-connect.git
-cdcd eldersafe-connect eldersafe-connect
+gitgit clone https://github.com/emanuel-amol/ICT-Project-A.git 
 ```
 ```
 bash
-python -m venv venvpython -m venv venv
-sourcesource venv/bin/activate venv/bin/activate # On Windows: venv\Scripts\activate# On Windows: venv\Scripts\activate
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
 3. Install dependencies:
@@ -100,8 +99,8 @@ sourcesource venv/bin/activate venv/bin/activate # On Windows: venv\Scripts\acti
 
 1. Start the main application:
 2. Access the application:
-    Main application: https://localhost:
-    Honeypot system: [http://localhost:](http://localhost:)
+    Main application: https://localhost:5000
+    Honeypot system: http://localhost:3000/login
 
 ## 💼 Usage
 
@@ -118,24 +117,24 @@ sourcesource venv/bin/activate venv/bin/activate # On Windows: venv\Scripts\acti
 
 ```
 bash
-pip pip installinstall -r requirements.txt -r requirements.txt
+pip install -r requirements.txt
 ```
 ```
-SUPABASE_URL=your_supabase_urlSUPABASE_URL=your_supabase_url
-SUPABASE_SERVICE_ROLE_KEY=your_supabase_keySUPABASE_SERVICE_ROLE_KEY=your_supabase_key
-SUPABASE_JWT_SECRET=your_jwt_secretSUPABASE_JWT_SECRET=your_jwt_secret
-FLASK_SECRET_KEY=your_flask_secretFLASK_SECRET_KEY=your_flask_secret
-JWT_SECRET=your_jwt_signing_keyJWT_SECRET=your_jwt_signing_key
-```
-```
-bash
-mkdirmkdir -p security_protocols/TLS/cert -p security_protocols/TLS/cert
-cdcd security_protocols/TLS/cert security_protocols/TLS/cert
-openssl req -x509 -newkey rsa:4096 -nodes -out cert.pem -keyout key.pem -days openssl req -x509 -newkey rsa:4096 -nodes -out cert.pem -keyout key.pem -days 365365
+SUPABASE_URL=your_supabase_url
+SUPABASE_SERVICE_ROLE_KEY=your_supabase_key
+SUPABASE_JWT_SECRET=your_jwt_secret
+FLASK_SECRET_KEY=your_flask_secret
+JWT_SECRET=your_jwt_signing_key
 ```
 ```
 bash
-python app.pypython app.py
+mkdir -p security_protocols/TLS/cert
+cd security_protocols/TLS/cert
+openssl req -x509 -newkey rsa:4096 -nodes -out cert.pem -keyout key.pem -days 365
+```
+```
+bash
+python app.py
 ```
 
 ```
@@ -196,7 +195,7 @@ User activities (care plan submissions, etc.)
 ## ⚖ License
 
 ```
-Show Image
+[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 ```
 This project is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.
 International License (CC BY-NC-ND 4.0).
@@ -236,7 +235,7 @@ View Full License
 We respectfully acknowledge the Wurundjeri People of the Kulin Nation, who are the Traditional
 Owners of the land on which Swinburne's Australian campuses are located in Melbourne's east and
 outer-east, and pay our respect to their Elders past, present and emerging.
-Thanks to [Instructor Name] for guidance throughout the project
+Thanks to Dr Kaberi Naznin for guidance throughout the project
 ```
 
 ```
